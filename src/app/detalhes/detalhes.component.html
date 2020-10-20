@@ -1,0 +1,34 @@
+<h3>
+    Detalhes do Senador: 
+    <span class="senatorName">
+        {{detalhes.nomeSenador}}
+    </span>
+</h3>
+
+<h2>Totais por Tipo:</h2>
+<table class="listTotals">
+    <tr *ngFor="let sum of sums">
+        <td>{{sum.tipo | tipo}}</td>
+        <td class="valor">R$ {{sum.valor | number:'1.2-2'}}</td>
+    </tr>
+    <tr>
+        <td>TOTAL:</td>
+        <td class="valor">R$ {{getTotal() | number:'1.2-2'}}</td>
+    </tr>
+</table>
+
+<h2>Despesas</h2>
+<table class="listExpenses">
+    <tr>
+        <th>Tipo</th>
+        <th>Fornecedor</th>
+        <th>Data</th>
+        <th>Valor</th>
+    </tr>
+    <tr *ngFor="let despesa of detalhes.despesas">
+        <td>{{despesa.tipo | tipo}}</td>
+        <td>{{despesa.fornec}}</td>
+        <td class="data">{{despesa.dia | number:'2.0-0'}}/{{despesa.mes | number:'2.0-0'}}/{{despesa.ano}}</td>
+        <td class="valor">R$ {{despesa.valor | number:'1.2-2'}}</td>
+    </tr>
+</table>

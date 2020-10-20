@@ -1,0 +1,19 @@
+.listTable {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.listTable tr {
+    height: 30px;
+    border: 1px solid;
+}
+
+.listTable tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.listTable td, .listTable th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}

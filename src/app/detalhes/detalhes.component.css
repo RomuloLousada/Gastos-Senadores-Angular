@@ -1,0 +1,26 @@
+.valor, .data {
+    text-align: right;
+}
+
+span.senatorName {
+    font-size: 25px;
+}
+
+.listTotals, .listExpenses {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.listTotals tr, .listExpenses tr {
+    height: 30px;
+    border: 1px solid;
+}
+
+.listTotals tr:nth-child(even), .listExpenses tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.listTotals td, .listTable th, .listExpenses td, .listExpenses th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}

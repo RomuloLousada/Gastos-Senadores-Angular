@@ -1,0 +1,12 @@
+<table class="listTable">
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Ações</th>
+    </tr>
+    <tr *ngFor="let senador of senadores">
+        <td> {{senador.id}} </td>
+        <td> {{senador.nomeSenador}} </td>
+        <td> <button (click)="goToDetails(senador.id)">Detalhes</button> </td>
+    </tr>
+</table>
